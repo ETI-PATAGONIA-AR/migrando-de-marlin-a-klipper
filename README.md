@@ -1,5 +1,13 @@
 # migrando-de-marlin-a-klipper
 
+<img width="1941" height="932" alt="Klipper_CPU" src="https://github.com/user-attachments/assets/6bd16dc2-97bb-41e2-9a00-53db93f74b42" />
+
+[![Ver Demo en YouTube en YouTube](https://img.shields.io/badge/▶_Ver_demo-YouTube-red)](https://youtu.be/CIx0jZOyXfU)
+[![License](https://img.shields.io/badge/Licencia-MIT-green)](#licencia)
+[![Python](https://img.shields.io/badge/Python-3.10+-blue)](https://python.org)
+[![Klipper](https://img.shields.io/badge/Klipper3D-blue)](https://github.com/klipper3d/klipper)
+[![kiauh](https://img.shields.io/badge/Kiauh-blue)](https://github.com/dw-0/kiauh)
+
 Aplicacion que les permite migrar sus impresoras 3D con Marlin a Klipper sin tener raspberry
 
 Hace un tiempo compartí una guía para configurar Marlin en impresoras 3D e incluso adaptarlo para proyectos CNC. Esta vez quiero mostrar algo diferente que me tuvo investigando durante bastante tiempo: la migración de Marlin a Klipper.
