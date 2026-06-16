@@ -10,7 +10,6 @@ Dicho de otra manera: la computadora se convierte en el cerebro de la impresora,
 **¿Y qué ventajas tiene esto?**
 
 Principalmente, un aumento importante en el rendimiento y la calidad de impresión:
-
 - Permite imprimir a mayores velocidades sin perder calidad.
 - Reduce vibraciones y el efecto "ghosting" o sombras en las piezas.
 - Mejora el control de extrusión para obtener esquinas más limpias y superficies más prolijas.
@@ -19,7 +18,6 @@ Principalmente, un aumento importante en el rendimiento y la calidad de impresi�
 - Además, incorpora una interfaz web muy cómoda desde donde se puede controlar todo el proceso de impresión usando cualquier navegador, ya sea desde una PC vieja o notebook...
 
 ***Entre otras cosas, permite:***
-
 - Subir archivos directamente por red.
 - Monitorear temperaturas en tiempo real.
 - Iniciar, pausar o cancelar impresiones.
@@ -38,10 +36,9 @@ Después de pasar varias horas peleándome con instalaciones, configuraciones y 
 
 El resultado es KLIPPER_WINDOWs, una herramienta que instala y configura automáticamente Klipper, Moonraker y Mainsail sobre Windows 10 y Windows 11 utilizando WSL2, sin necesidad de Raspberry Pi y sin tener que ejecutar manualmente una larga lista de comandos.
 
-***La idea fue simple:*** que cualquier persona pueda tener Klipper funcionando con apenas unos pocos clics.
+`***La idea fue simple:*** que cualquier persona pueda tener Klipper funcionando con apenas unos pocos clics.`
 
 **El instalador se encarga de:**
-
 - Habilitar WSL2.
 - Instalar Ubuntu.
 - Configurar Klipper.
@@ -50,12 +47,11 @@ El resultado es KLIPPER_WINDOWs, una herramienta que instala y configura automá
 - Configurar nginx.
 - Preparar el entorno completo para comenzar a imprimir.
 
-Una vez instalado, el launcher diario detecta automáticamente la impresora conectada por USB, inicia todos los servicios necesarios y abre Mainsail en el navegador.
+`Una vez instalado, el launcher diario detecta automáticamente la impresora conectada por USB, inicia todos los servicios necesarios y abre Mainsail en el navegador.`
 
 En pocas palabras, lo que normalmente requiere seguir varios tutoriales, copiar comandos y solucionar errores manualmente, queda reducido a un proceso mucho más simple y accesible.
 
 ## Características principales
-
 - Instalación completamente automática mediante un único archivo .bat.
 - Detección automática de la impresora USB.
 - Entorno completo con Klipper, Moonraker y Mainsail.
@@ -75,7 +71,6 @@ En pocas palabras, lo que normalmente requiere seguir varios tutoriales, copiar 
 ### Configuraciones incluidas
 
 Esta versión incorpora perfiles preconfigurados para varias impresoras de la familia Ender, facilitando enormemente la puesta en marcha:
-
 - Ender 3 con Creality 4.2.2
 - Ender 3 con Creality 4.2.7
 - Ender 3 Pro con Creality 4.2.7
@@ -83,24 +78,22 @@ Esta versión incorpora perfiles preconfigurados para varias impresoras de la fa
 - Ender 3 V2 con Creality 4.2.7
 - Ender 3 V3 SE con Creality 4.2.7
 
-Por defecto, el sistema queda configurado para una Ender 3 con placa Creality 4.2.2, aunque posteriormente se puede cambiar de modelo sin necesidad de reinstalar todo el entorno.
+`Por defecto, el sistema queda configurado para una Ender 3 con placa Creality 4.2.2, aunque posteriormente se puede cambiar de modelo sin necesidad de reinstalar todo el entorno.`
 
 ***Mi objetivo con este proyecto no fue reinventar Klipper ni reemplazar los métodos tradicionales de instalación. Simplemente quise eliminar la parte más tediosa del proceso para que cualquier usuario pueda probar Klipper en una PC con Windows sin necesidad de convertirse en experto en Linux durante el intento.***
 
 # 📚 KLIPPER_WINDOWs — Guía de uso
 
 ***Requisitos previos***
-
 - Windows 10 (build 2004 o superior) o Windows 11
 - 8 GB de RAM mínimo
 - Impresora 3D Ender 3 / Pro / V2 / V3 SE con placa Creality 4.2.2 o 4.2.7
 - Conexión a internet para la primera instalación
 - Python 3.10 o superior
-- 
+
 ---
 
 ## 🔧 1. Instalación
-
 - Descomprimir el zip en cualquier carpeta (también funciona desde un pendrive)
 - Copiar los archivos de biblio/ desde la versión anterior si los tenés: wsl_update_x64.msi, usbipd-win_5.3.0_x64.msi y kiauh-master.zip
 - Hacer clic derecho sobre install.bat → Ejecutar como Administrador
@@ -114,7 +107,6 @@ Por defecto, el sistema queda configurado para una Ender 3 con placa Creality 4.
 ## 🔨 2. Compilar el firmware
 
 Antes de conectar la impresora hay que compilar y flashear el firmware de Klipper en la placa.
-
 - Ejecutar Compilar_Firmware.bat
 - Seleccionar el modelo de placa en el menú (tiene que coincidir con lo elegido en la instalación)
 - Esperar que compile — el archivo klipper.bin queda guardado automáticamente en la carpeta firmwares/
@@ -122,18 +114,17 @@ Antes de conectar la impresora hay que compilar y flashear el firmware de Klippe
 - Con la impresora apagada insertar la SD y encender — la placa flashea sola en unos segundos
 - La impresora queda lista cuando el archivo en la SD se renombra solo a FIRMWARE.CUR
 
-Ver firmwares/README.md para más detalles sobre el proceso de flasheo según placa.
+Ver `firmwares/README.md` para más detalles sobre el proceso de flasheo según placa.
 
 ---
 
 ## 🚀 3. Uso diario
-
-Conectar la impresora por USB
-Ejecutar Iniciar_Klipper.bat desde el escritorio
-El launcher detecta automáticamente la impresora USB, la conecta a WSL e inicia todos los servicios
-Se abre el navegador con Mainsail en http://localhost
-Desde Mainsail se controla todo: home, temperatura, subir archivos y lanzar impresiones
-Mantener abierta la ventana de terminal mientras se imprime. Cerrarla detiene los servicios.
+- Conectar la impresora por USB
+- Ejecutar `Iniciar_Klipper.bat` desde el escritorio
+- El launcher detecta automáticamente la impresora USB, la conecta a WSL e inicia todos los servicios
+- Se abre el navegador con Mainsail en http://localhost
+- ***Desde Mainsail se controla todo:*** home, temperatura, subir archivos y lanzar impresiones
+- Mantener abierta la ventana de terminal mientras se imprime. Cerrarla detiene los servicios.
 
 ---
 
@@ -141,23 +132,12 @@ Mantener abierta la ventana de terminal mientras se imprime. Cerrarla detiene lo
 
 Antes de la primera impresión hacer estos pasos desde la consola de Mainsail:
 
-- PID tuning del hotend:
+- PID tuning del hotend: `PID_CALIBRATE HEATER=extruder TARGET=200`
+- PID tuning de la cama: `PID_CALIBRATE HEATER=heater_bed TARGET=60`
+- Calibrar Z offset con un papel entre la boquilla y la cama: `PROBE_CALIBRATE`
 
-PID_CALIBRATE HEATER=extruder TARGET=200
-
-- PID tuning de la cama:
-
-PID_CALIBRATE HEATER=heater_bed TARGET=60
-
-- Calibrar Z offset con un papel entre la boquilla y la cama:
-
-PROBE_CALIBRATE
-
-o ajustar manualmente el position_endstop en printer.cfg.
-
-- Después de cada calibración guardar con:
-
-SAVE_CONFIG
+o ajustar manualmente el `position_endstop` en `printer.cfg`.
+- Después de cada calibración guardar con: `SAVE_CONFIG`
 
 ---
 
@@ -166,10 +146,10 @@ SAVE_CONFIG
 El sistema guarda automáticamente el estado de la impresión cada 5 segundos. Si hay un corte o cuelgue:
 
 - Ejecutar Iniciar_Klipper.bat normalmente
-- En la consola de Mainsail ejecutar SHOW_SAVED_STATE para ver dónde quedó
-- Ejecutar RECOVER_PRINT para reanudar desde el último punto guardado
-- Si la recuperación no es exacta, usar SET_RECOVERY_STATE con las coordenadas del log y luego RECOVER_PRINT
-- Al terminar la impresión ejecutar CLEAR_RECOVERY para limpiar el estado guardado
+- En la consola de Mainsail ejecutar `SHOW_SAVED_STATE` para ver dónde quedó
+- Ejecutar `RECOVER_PRINT` para reanudar desde el último punto guardado
+- Si la recuperación no es exacta, usar `SET_RECOVERY_STATE` con las coordenadas del log y luego `RECOVER_PRINT`
+- Al terminar la impresión ejecutar `CLEAR_RECOVERY` para limpiar el estado guardado
 
 ---
 
