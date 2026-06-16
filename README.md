@@ -51,6 +51,14 @@ El resultado es KLIPPER_WINDOWs, una herramienta que instala y configura automá
 
 En pocas palabras, lo que normalmente requiere seguir varios tutoriales, copiar comandos y solucionar errores manualmente, queda reducido a un proceso mucho más simple y accesible.
 
+
+## 🛠️ Requisitos y Herramientas Recomendadas
+
+Para realizar la migración de forma correcta, es fundamental que utilices las versiones más recientes de los siguientes proyectos oficiales:
+
+* **[Klipper](https://github.com/klipper3d/klipper):** El firmware principal. Asegúrate de descargar las últimas actualizaciones directamente desde el repositorio oficial de @klipper3d y guardalos en la carpeta "biblio".
+* **[KIAUH (Klipper Installation And Update Helper)](https://github.com/dw-0/kiauh):** La herramienta recomendada para instalar y mantener tu entorno actualizado. Descarga la última versión desde el repositorio de @dw-0 y guardalos en la carpeta "biblio".
+
 ## Características principales
 - Instalación completamente automática mediante un único archivo .bat.
 - Detección automática de la impresora USB.
