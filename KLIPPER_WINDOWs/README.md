@@ -11,7 +11,7 @@ Un solo clic. Sin comandos manuales.
 3. Conectar la impresora USB
 4. Ejecutar `Iniciar_Klipper.bat` del escritorio
 
-## Que hace install.bat
+## Que hace install.bat 
 
 - Activa WSL2 y VirtualMachinePlatform
 - Instala Ubuntu + usbipd-win
